@@ -1,0 +1,10 @@
+.btn {
+    @apply border-0 outline-none size-[60px] rounded-[10px] bg-transparent shadow-custom-white cursor-pointer m-[5px]
+}
+
+#display {
+    @apply w-[100%] px-[5px] bg-transparent outline-none h-[40px] text-white text-right
+}
+.equal {
+    @apply border-0 outline-none h-[60px] w-[100%] rounded-[10px] bg-transparent shadow-custom-white cursor-pointer
+}

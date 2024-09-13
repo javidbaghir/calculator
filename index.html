@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="/assets/css/output.css">
+</head>
+<body class="bg-[#e3f9ff]">
+
+    <div class="container mx-auto w-[100%] h-[100vh] flex items-center justify-center ">
+        <div class="bg-[#3a4452] text-white p-[20px] rounded-[10px]">
+            <form>
+              <div class="mb-[10px]">
+                <input id="display" type="text" disabled>
+              </div>
+
+              <div>
+                <input class="btn text-[#33ffd8]" type="button" value="AC" onclick="clearDisplay()">
+                <input class="btn text-[#33ffd8]" type="button" value="DE" onclick="deleteLast()">
+                <input class="btn text-[#33ffd8]" type="button" value="." onclick="appendToDisplay('.')">
+                <input class="btn text-[#33ffd8]" type="button" value="/"  onclick="appendToDisplay('/')">
+              </div>
+
+              <div>
+                <input class="btn" type="button" value="7" onclick="appendToDisplay('7')">
+                <input class="btn" type="button" value="8" onclick="appendToDisplay('8')">
+                <input class="btn" type="button" value="9" onclick="appendToDisplay('9')">
+                <input class="btn text-[#33ffd8]" type="button" value="*" onclick="appendToDisplay('*')">
+              </div>
+
+              <div>
+                <input class="btn" type="button" value="4" onclick="appendToDisplay('4')">
+                <input class="btn" type="button" value="5" onclick="appendToDisplay('5')">
+                <input class="btn" type="button" value="6" onclick="appendToDisplay('6')">
+                <input class="btn text-[#33ffd8]" type="button" value="-" onclick="appendToDisplay('-')">
+              </div>
+
+              <div>
+                <input class="btn" type="button" value="1" onclick="appendToDisplay('1')">
+                <input class="btn" type="button" value="2" onclick="appendToDisplay('2')">
+                <input class="btn" type="button" value="3" onclick="appendToDisplay('3')">
+                <input class="btn text-[#33ffd8]" type="button" value="+" onclick="appendToDisplay('+')">
+              </div>
+
+              <div class="flex">
+                <input class="btn" type="button" value="00" onclick="appendToDisplay('00')">
+                <input class="btn" type="button" value="0" onclick="appendToDisplay('0')">
+                <input class="btn text-[#33ffd8] flex-1" type="button" value="=" onclick="calculateResult()">
+              </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="./assets/js/script.js">
+    
+    </script>
+</body>
+</html>
